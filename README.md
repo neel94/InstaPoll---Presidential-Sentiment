@@ -14,6 +14,4 @@ The spark streaming jobs use a 60 seconds window to calculate the number of ment
 
 ![Pipeline](figures/output.png)
 
-## Sentiment Analysis
 
-For this project, we decided to use the [CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) package available from Stanford University. The sentiment model in CoreNLP package is trained using a Recursive Neural Network - details of the model can be found in this seminal [paper](http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf). The model is currently the state of the art in sentiment analysis of text. Stanford CoreNLP is a java package. Initially, we were thinking of using python to write the spark streaming job - however, due the imcompatibility of python with the CoreNLP java package, we ended up using Scala to write the spark streaming code - plus its always fun to be [functional](https://en.wikipedia.org/wiki/Functional_programming).
